@@ -5,6 +5,8 @@
 package supplier;
 
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import user.Login;
 
@@ -20,6 +22,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
       Color selectionColor = new Color(34, 48, 62);
       Color sideColor = new Color(64, 194, 150);
       Color textSelectionColor = new Color(255, 255, 255);
+      int xx, xy;
     public SupplierDashboard() {
         initComponents();
         init();
@@ -64,6 +67,21 @@ public class SupplierDashboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                formMouseDragged(evt);
+            }
+        });
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                formMousePressed(evt);
+            }
+        });
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(35, 35, 35));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -359,6 +377,31 @@ public class SupplierDashboard extends javax.swing.JFrame {
         supplierAccount.setVisible(true);
         supplierAccount.pack();
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        for(double i = 0.1; i<=1.0; i+=0.1){
+            String s = ""+i;
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(SupplierDashboard.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        
+      }
+    }//GEN-LAST:event_formWindowOpened
+
+    private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
+       int x = evt.getXOnScreen();
+       int y = evt.getYOnScreen();
+       this.setLocation(x - xx, y - xy);
+    }//GEN-LAST:event_formMouseDragged
+
+    private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
+        xx = evt.getX();
+        xy = evt.getY();
+    }//GEN-LAST:event_formMousePressed
 
     /**
      * @param args the command line arguments

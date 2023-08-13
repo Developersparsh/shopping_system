@@ -360,7 +360,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                 jLabel28MouseClicked(evt);
             }
         });
-        jPanel16.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 200, 40));
+        jPanel16.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 200, 40));
 
         jPanel17.setBackground(new java.awt.Color(42, 53, 75));
 
@@ -377,10 +377,10 @@ public class AdminDashboard extends javax.swing.JFrame {
 
         jPanel16.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user.png"))); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_dark.png"))); // NOI18N
         jPanel16.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 30, 50));
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_dark.png"))); // NOI18N
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user.png"))); // NOI18N
         jPanel16.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 30, 50));
 
         jPanel3.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 270, 50));
@@ -396,7 +396,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                 jLabel30MouseClicked(evt);
             }
         });
-        jPanel18.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, -10, 200, 60));
+        jPanel18.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 200, 60));
 
         jPanel19.setBackground(new java.awt.Color(42, 53, 75));
 
@@ -575,8 +575,8 @@ public class AdminDashboard extends javax.swing.JFrame {
       jLabel35.setVisible(false);
       jLabel25.setVisible(true);
       jLabel36.setVisible(false);
-      jLabel37.setVisible(true);
-      jLabel28.setVisible(false);
+      jLabel27.setVisible(true);
+      jLabel37.setVisible(false);
       jLabel6.setVisible(true);
       jLabel38.setVisible(false); 
        
@@ -594,8 +594,8 @@ public class AdminDashboard extends javax.swing.JFrame {
        jPanel7.setBackground(selectionColor);
        jPanel8.setBackground(sideColor);
        jLabel7.setForeground(textSelectionColor);
-       jLabel8.setVisible(false);
-       jLabel9.setVisible(true);
+       jLabel32.setVisible(false);
+       jLabel8.setVisible(true);
        ManageCategory manageCategory = new ManageCategory();
        manageCategory.setVisible(true);
        manageCategory.pack();
@@ -605,33 +605,23 @@ public class AdminDashboard extends javax.swing.JFrame {
       jPanel9.setBackground(selectionColor);
       jPanel10.setBackground(sideColor);
       jLabel9.setForeground(textSelectionColor);
-      jLabel1.setVisible(false);
-      jLabel12.setVisible(true);
+      jLabel10.setVisible(false);
+      jLabel33.setVisible(true);
       ManageProducts manageProducts = new ManageProducts();
       manageProducts.setVisible(true);
       manageProducts.pack();
     }//GEN-LAST:event_jLabel9MouseClicked
 
-    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
-      jPanel16.setBackground(selectionColor);
-      jPanel17.setBackground(sideColor);
-      jLabel28.setForeground(textSelectionColor);
-      jLabel29.setVisible(false);
-      jLabel30.setVisible(true);
-      ManageUsers manageUsers = new ManageUsers();
-      manageUsers.setVisible(true);
-      manageUsers.pack();
-    }//GEN-LAST:event_jLabel28MouseClicked
-
     private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
-      jPanel18.setBackground(selectionColor);
-      jPanel19.setBackground(sideColor);
-      jLabel30.setForeground(textSelectionColor);
-      jLabel31.setVisible(false);
-      jLabel32.setVisible(true);
-      AddSupplier addSupplier = new AddSupplier();
-      addSupplier.setVisible(true);
-      addSupplier.pack();
+       jPanel18.setBackground(selectionColor);
+       jPanel19.setBackground(sideColor);
+       jLabel30.setForeground(textSelectionColor);
+       jLabel31.setVisible(false);
+       jLabel35.setVisible(true);
+       AddSupplier addSupplier = new AddSupplier();
+       addSupplier.setVisible(true);
+       addSupplier.pack();
+
     }//GEN-LAST:event_jLabel30MouseClicked
 
     private void jLabel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseClicked
@@ -639,33 +629,44 @@ public class AdminDashboard extends javax.swing.JFrame {
        jPanel13.setBackground(sideColor);
        jLabel24.setForeground(textSelectionColor);
        jLabel25.setVisible(false);
-       jLabel26.setVisible(true);
+       jLabel36.setVisible(true);
        ManageSuppliers manageSuppliers = new ManageSuppliers();
        manageSuppliers.setVisible(true);
        manageSuppliers.pack();
     }//GEN-LAST:event_jLabel24MouseClicked
 
     private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
-       jPanel14.setBackground(selectionColor);
-       jPanel15.setBackground(sideColor);
-       jLabel26.setForeground(textSelectionColor);
-       jLabel27.setVisible(true);
-       jLabel28.setVisible(false);
-       SelectSupplier selectSupplier = new SelectSupplier();
-       selectSupplier.setVisible(true);
-       selectSupplier.pack();
+        jPanel14.setBackground(selectionColor);
+        jPanel15.setBackground(sideColor);    
+        jLabel26.setForeground(textSelectionColor);
+        jLabel27.setVisible(false);
+        jLabel37.setVisible(true);
+        SelectSupplier selectSupplier = new SelectSupplier();
+        selectSupplier.setVisible(true);
+        selectSupplier.pack();
     }//GEN-LAST:event_jLabel26MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-      jPanel5.setBackground(selectionColor);
-      jPanel6.setBackground(sideColor);       
-      jLabel5.setForeground(textSelectionColor);    
-      jLabel6.setVisible(false);
-      jLabel7.setVisible(true); 
-      Transaction transaction = new Transaction();
-      transaction.setVisible(true);
-      transaction.pack();
+        jPanel5.setBackground(selectionColor);
+        jPanel6.setBackground(sideColor);   
+        jLabel5.setForeground(textSelectionColor);
+        jLabel6.setVisible(false);
+        jLabel38.setVisible(true); 
+        Transaction transaction = new Transaction();
+        transaction.setVisible(true);
+        transaction.pack();
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        jPanel16.setBackground(selectionColor);
+        jPanel17.setBackground(sideColor);
+        jLabel28.setForeground(textSelectionColor);
+        jLabel29.setVisible(false);
+        jLabel34.setVisible(true);
+        ManageUsers manageUsers = new ManageUsers();
+        manageUsers.setVisible(true);
+        manageUsers.pack();
+    }//GEN-LAST:event_jLabel28MouseClicked
 
     /**
      * @param args the command line arguments
@@ -726,15 +727,15 @@ public class AdminDashboard extends javax.swing.JFrame {
     public static javax.swing.JLabel jLabel28;
     public static javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    protected static javax.swing.JLabel jLabel30;
+    public static javax.swing.JLabel jLabel30;
     public static javax.swing.JLabel jLabel31;
     public static javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
+    public static javax.swing.JLabel jLabel33;
+    public static javax.swing.JLabel jLabel34;
+    public static javax.swing.JLabel jLabel35;
+    public static javax.swing.JLabel jLabel36;
+    public static javax.swing.JLabel jLabel37;
+    public static javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
     public static javax.swing.JLabel jLabel5;
     public static javax.swing.JLabel jLabel6;

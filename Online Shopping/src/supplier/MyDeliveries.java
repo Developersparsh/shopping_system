@@ -5,6 +5,9 @@
 package supplier;
 
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import user.Login;
 
 /**
  *
@@ -15,6 +18,7 @@ public class MyDeliveries extends javax.swing.JFrame {
     /**
      * Creates new form MyDeliveries
      */
+    int xx, xy;
      Color textPrimaryColor = new Color(102, 120, 138);
      Color primaryColor = new Color(42, 58, 73);
     public MyDeliveries() {
@@ -38,6 +42,22 @@ public class MyDeliveries extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                formMouseDragged(evt);
+            }
+        });
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                formMousePressed(evt);
+            }
+        });
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(35, 35, 35));
 
@@ -127,6 +147,7 @@ public class MyDeliveries extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
@@ -137,6 +158,31 @@ public class MyDeliveries extends javax.swing.JFrame {
         SupplierDashboard.jLabel10.setVisible(true);
         SupplierDashboard.jLabel18.setVisible(false);
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+         for(double i = 0.1; i<=1.0; i+=0.1){
+            String s = ""+i;
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(MyDeliveries.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        
+      }
+    }//GEN-LAST:event_formWindowOpened
+
+    private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
+     int x = evt.getXOnScreen();
+     int y = evt.getYOnScreen();
+     this.setLocation(x - xx, y - xy);
+    }//GEN-LAST:event_formMouseDragged
+
+    private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
+       xx = evt.getX();
+       xy = evt.getY();
+    }//GEN-LAST:event_formMousePressed
 
     /**
      * @param args the command line arguments

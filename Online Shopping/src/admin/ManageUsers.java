@@ -17,7 +17,7 @@ public class ManageUsers extends javax.swing.JFrame {
      * Creates new form ManageUsers
      */
      Color textPrimaryColor = new Color(102,120,138);
-    Color PrimaryColor = new Color(42,58,73);
+    Color primaryColor = new Color(42,58,73);
     public ManageUsers() {
         initComponents();
     }
@@ -270,12 +270,12 @@ public class ManageUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField7ActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-      setVisible(false);
-       admin.AdminDashboard.jPanel16.setBackground(PrimaryColor);
-       admin.AdminDashboard.jPanel17.setBackground(PrimaryColor);
-       admin.AdminDashboard.jLabel28.setForeground(textPrimaryColor);
-       admin.AdminDashboard.jLabel29.setVisible(true);
-       admin.AdminDashboard.jLabel30.setVisible(false);
+       setVisible(false);
+       AdminDashboard.jPanel16.setBackground(primaryColor);
+       AdminDashboard.jPanel17.setBackground(primaryColor);
+       AdminDashboard.jLabel28.setForeground(textPrimaryColor);
+       AdminDashboard.jLabel29.setVisible(true);
+       AdminDashboard.jLabel34.setVisible(false);
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**

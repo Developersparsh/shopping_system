@@ -15,8 +15,8 @@ public class ManageCategory extends javax.swing.JFrame {
     /**
      * Creates new form Category
      */
-    Color textPrimaryColor = new Color(102,120,138);
-    Color PrimaryColor = new Color(42,58,73);
+    Color textPrimaryColor = new Color(102, 120, 138);
+    Color primaryColor = new Color(42, 58, 73);
     
     public ManageCategory() {
         initComponents();
@@ -216,12 +216,12 @@ public class ManageCategory extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-       setVisible(true);
-       AdminDashboard.jPanel7.setBackground(PrimaryColor);
-       AdminDashboard.jPanel8.setBackground(PrimaryColor);
+       setVisible(false);
+       AdminDashboard.jPanel7.setBackground(primaryColor);
+       AdminDashboard.jPanel8.setBackground(primaryColor);
        AdminDashboard.jLabel7.setForeground(textPrimaryColor);
-       AdminDashboard.jLabel8.setVisible(true);
-       AdminDashboard.jLabel9.setVisible(false);
+       AdminDashboard.jLabel32.setVisible(true);
+       AdminDashboard.jLabel8.setVisible(false);
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**

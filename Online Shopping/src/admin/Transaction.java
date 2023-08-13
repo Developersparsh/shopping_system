@@ -4,6 +4,11 @@
  */
 package admin;
 
+import static admin.AdminDashboard.jLabel38;
+import static admin.AdminDashboard.jLabel5;
+import static admin.AdminDashboard.jLabel6;
+import static admin.AdminDashboard.jPanel5;
+import static admin.AdminDashboard.jPanel6;
 import java.awt.Color;
 
 /**
@@ -15,7 +20,7 @@ public class Transaction extends javax.swing.JFrame {
     /**
      * Creates new form Transaction
      */
-     Color PrimaryColor= new Color(102, 120, 138);
+     Color primaryColor= new Color(102, 120, 138);
     Color textPrimaryColor = new Color(42, 58, 73);
     
     public Transaction() {
@@ -97,12 +102,12 @@ public class Transaction extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-      setVisible(false);
-      AdminDashboard.jPanel5.setBackground(PrimaryColor);
-      AdminDashboard.jPanel6.setBackground(PrimaryColor);       
-      AdminDashboard.jLabel5.setForeground(textPrimaryColor);    
-      AdminDashboard.jLabel6.setVisible(true);
-      AdminDashboard.jLabel7.setVisible(false); 
+        setVisible(false);
+        AdminDashboard.jPanel5.setBackground(primaryColor);
+        AdminDashboard.jPanel6.setBackground(primaryColor);   
+        AdminDashboard.jLabel5.setForeground(textPrimaryColor);
+        AdminDashboard.jLabel6.setVisible(true);
+        AdminDashboard.jLabel38.setVisible(false); 
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**

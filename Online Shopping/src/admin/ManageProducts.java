@@ -14,7 +14,7 @@ public class ManageProducts extends javax.swing.JFrame {
      * Creates new form Product
      */
     Color textPrimaryColor = new Color(102,120,138);
-    Color PrimaryColor = new Color(42,58,73);
+    Color primaryColor = new Color(42,58,73);
     public ManageProducts() {
         initComponents();
     }
@@ -244,12 +244,12 @@ public class ManageProducts extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-     setVisible(false);
-      AdminDashboard.jPanel9.setBackground( PrimaryColor);
-      AdminDashboard.jPanel10.setBackground( PrimaryColor);
+      setVisible(false);
+      AdminDashboard.jPanel9.setBackground( primaryColor);
+      AdminDashboard.jPanel10.setBackground( primaryColor);
       AdminDashboard.jLabel9.setForeground(textPrimaryColor);
-      AdminDashboard.jLabel11.setVisible(true);
-      AdminDashboard.jLabel12.setVisible(false);
+      AdminDashboard.jLabel10.setVisible(true);
+      AdminDashboard.jLabel33.setVisible(false);
      
     }//GEN-LAST:event_jLabel12MouseClicked
 
