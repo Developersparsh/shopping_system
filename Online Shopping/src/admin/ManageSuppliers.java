@@ -4,6 +4,10 @@
  */
 package admin;
 
+import java.awt.Color;
+
+
+
 /**
  *
  * @author Intex
@@ -13,6 +17,8 @@ public class ManageSuppliers extends javax.swing.JFrame {
     /**
      * Creates new form ManageSuppliers
      */
+     Color textPrimaryColor = new Color(102, 120, 138);
+    Color PrimaryColor = new Color(42, 58, 73);
     public ManageSuppliers() {
         initComponents();
     }
@@ -55,7 +61,6 @@ public class ManageSuppliers extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(35, 35, 35));
         jPanel1.setForeground(new java.awt.Color(153, 153, 153));
@@ -149,7 +154,7 @@ public class ManageSuppliers extends javax.swing.JFrame {
                 jLabel12MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 0, 30, 30));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 0, 30, 30));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hide.png"))); // NOI18N
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, -1, -1));
@@ -203,7 +208,7 @@ public class ManageSuppliers extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 795, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 795, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +216,6 @@ public class ManageSuppliers extends javax.swing.JFrame {
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -235,7 +239,12 @@ public class ManageSuppliers extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField7ActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-       System.exit(0);
+       setVisible(false);
+       AdminDashboard.jPanel12.setBackground(PrimaryColor );
+       AdminDashboard.jPanel13.setBackground(PrimaryColor );
+       AdminDashboard.jLabel24.setForeground(textPrimaryColor);
+       AdminDashboard.jLabel25.setVisible(true);
+       AdminDashboard.jLabel26.setVisible(false);
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
